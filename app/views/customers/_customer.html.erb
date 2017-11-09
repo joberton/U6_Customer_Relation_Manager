@@ -1,0 +1,9 @@
+<ul>
+	<% customers.each do |customer| %>
+		<li><%= customer.full_name %></li>
+		<li><%= image_tag customer.image %></li>
+		<li><%= customer.province %></li>
+		<li><%= customer.phone_number %></li>
+		<li><%= customer.email_address %></li>
+	<%end%>
+</ul>
