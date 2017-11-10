@@ -3,7 +3,8 @@
 	<ul id="customer">	
 		<li><h3><%= customer.full_name %></h3></li>
 		<li><%= image_tag customer.image, size: "250" %></li>
-		<li><%= customer.phone_number %></li>
-		<li><%= customer.email_address %></li>
+		<li><strong>Province:</strong> <%= !customer.province.nil? ? customer.province.name : "none" %></li>
+	    <li><%= customer.phone_number %></li>
+		<li><strong>Email:</strong> <%= !customer.email_address.empty? ? customer.email_address : "none" %></li>
 	</ul>
 <%end%>
